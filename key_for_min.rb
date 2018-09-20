@@ -4,11 +4,11 @@
 def key_for_min_value(name_hash)
   return nil if name_hash.empty?
   name_hash.each do |key, value|
-    if !tmp_value 
+    if !tmp_value
       tmp_value = value
     end
-    if !tmp_key 
-      tmp_key = key 
+    if !tmp_key
+      tmp_key = key
     end
     if value < tmp_value
       tmp_key = key
